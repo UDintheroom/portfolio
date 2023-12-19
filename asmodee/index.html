@@ -4,22 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asmodee Korea</title>
-  <link rel="stylesheet" href="./assets/css/comm.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <header id="header">
       <!-- 로고 -->
-      <h1>
+      <h1 id="logo">
         <a href="#">
-          <img src="./images/logo.png" alt="아스모디">
+          아스모디
         </a>
       </h1>
-      <!-- 내비게이션 -->
-      <nav></nav>
+
+      <!-- 내비게이션(메뉴) -->
+      <a href="#"><i class="las la-bars"></i></a>
+      <!-- <nav id="gnb">
+        <ul class="depth1">
+          <li>
+            <a href="#">회사소개</a>
+          </li>
+          <li>
+            <a href="#">제품소개</a>
+            <ul class="depth2">
+              <li>
+                <a href="#">보드게임</a>
+                <ul class="depth3">
+                  <li><a href="#">가족 / 캐주얼 게임</a></li>
+                  <li><a href="#">파티 게임</a></li>
+                  <li><a href="#">전략 / 게이머스 게임</a></li>
+                </ul>
+            </li>
+              <li><a href="#">매직 &#58; 더 게더링 카드 게임</a></li>
+              <li><a href="#">직소퍼즐</a></li>
+              <li><a href="#">서적</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">아스모디 에듀</a>
+          </li>
+          <li>
+            <a href="#">자료실</a>
+            <ul class="depth2">
+              <li><a href="#">규칙서</a></li>
+              <li><a href="#">구성물 파일</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">문의하기</a>
+          </li>
+        </ul>
+        <div class="language">
+          <a href="#">KO</a>
+          <a href="#">EN</a>
+        </div>
+      </nav> -->
     </header>
 
-    <main>
+
+    <main id="main">
       <!-- 상단 배너 슬라이드 -->
       <div class="slide">
         <ul>
@@ -35,30 +78,31 @@
           <li>
             <img src="./images/main_4dobble.png" alt="도블 게임 사진">
           </li>
-        </ul>
+        </ul>        
+        <div class="slogan 1">Great Games,</div>
+        <div class="slogan 2">Amazing Stories</div>
       </div>
-      <h2 class="slogan 1">Great Games,</h2>
-      <h2 class="slogan 2">Amazing Stories</h2>
-      <span>
+      <span class="main-txt 1">
         아스모디 그룹은 <br>
         게임이 가진 이야기의 힘으로
       </span>
-      <br>
-      <strong>
+      <strong class="main-txt 2">
         50여국의 소비자들에게 <br>
         놀랍고 즐거운 경험을 선사합니다
       </strong>
 
       <!-- upcoming&new -->
-      <section class="sec-new">
-        <h3>
+      <section class="sec-g sec-new">
+        <h2 class="title">
           UPCOMING <br> &#38; NEW
-        </h3>
-        <ul>
+        </h2>
+        <ul class="new-games">
           <li>
             <img src="./images/b_canopy.jpg" alt="캐노피">
+
             <span>캐노피</span>
             <p>유통 &#32;하비게임몰</p>
+
             <p>&#35;셋 콜렉션</p>
             <p>&#35;카드 드래프트</p>
           </li>
@@ -84,7 +128,7 @@
             <p>&#35;오픈 드래프트</p>
           </li>
           <li>
-            <img src="./images/b_t2rs.jpg" alt="티켓 투 라이드 : 샌프란시스코">
+            <img src="./images/b_t2rs.jpg" alt="티켓 투 라이드:샌프란시스코">
             <span>티켓 투 라이드&#58;샌프란시스코</span>
             <p>유통 &#32;코리아보드게임즈</p>
             <p>&#35;셋 콜렉션</p>
@@ -98,18 +142,15 @@
             <p>&#35;카드 드래프팅</p>
           </li>
         </ul>
-        <button class="btn-new">
-          <span class="btn-read">READ ALL</span>
-        </button>
+        <a href="#">READ ALL</a>
       </section>
 
       <!-- our games -->
       <section class="sec-games">
-        <h3>OUR GAMES</h3>
-        <ul>
+        <h3 class="title">OUR GAMES</h3>
+        <ul class="our-games">
           <li>
-            <img src="./images/main_2t2r.png" alt="티켓 투 라이드 게임 플레이 사진">
-            <img src="./images/logo_t2r.png" alt="티켓 투 라이드 로고">
+            <strong>티켓 투 라이드 로고</strong>
             <span>기차를 타고 대륙과 국가를 횡단하자&#33;</span>
             <p>알란 R. 문이 디자인하고 <br>
             Days of Wonder사에서 출시한 셋 콜렉션 게임 <br>
@@ -148,30 +189,23 @@
           찾을 수록 즐길 수록 재미있는 도블&#33;</p>
           </li>
         </ul>
-        <button class="btn-games">
-          <span class="btn-meet">MEET ALL GAMES</span>
-        </button>
+        <a href="#" class="btn-more">MEET ALL GAMES</a>
       </section>
 
       <!-- files -->
       <section class="sec-files">
-        <h3>FILES</h3>
+        <h3 class="title">FILES</h3>
         <ul class="files">
           <li>
-            <a href="#">
-            <img src="./images/files_rule.jpg" alt="규칙서">
-            <span>규칙서</span>
-            </a>
+            <a href="#">규칙서</a>
           </li>
           <li>
             <a href="#">
-            <img src="./images/files_files.jpg" alt="구성물 파일">
             <span>구성물 파일</span>
             </a>
           </li>
           <li>
             <a href="#">
-            <img src="./images/files_etc.jpg" alt="기타">
             <span>기타</span>
             </a>
           </li>
@@ -180,8 +214,8 @@
 
       <!-- recent news -->
       <section class="sec-news">
-        <h3>RECENT NEWS</h3>
-        <ul>
+        <h3 class="title">RECENT NEWS</h3>
+        <ul class="news">
           <li>
             <a href="#">
             <img src="./images/news_11.jpg" alt="아코타임즈 11월호">
@@ -212,42 +246,43 @@
       <hr>
 
       <!-- CS center -->
-      <section class="cs_center">
-        <ul>
-          <li>
-            <a href="https://pf.kakao.com/_WjxdmK"><img src="./images/cs_consumer.png" alt="소비자 상담">소비자 상담</a>
-          </li>
-          <li>
-            <a href="mailto:N.Song@asmodee.com"><img src="./images/cs_distributor.png" alt="도매 및 총판 문의">도매 및 총판 문의</a>
-          </li>
-          <li>
-            <a href="mailto:J.Kim@asmodee.com"><img src="./images/cs_marketing.png" alt="마케팅 문의">마케팅 문의</a>
-          </li>
-          <li>
-            <a href="mailto:Jh.Park@Asmodee.Com"><img src="./images/cs_brand.png" alt="브랜드 문의">브랜드 문의</a>
-          </li>
-        </ul>
+      <section class="cs-center">
+        <a href="https://pf.kakao.com/_WjxdmK">소비자 상담</a>
+        <a href="mailto:N.Song@asmodee.com"><img src="./images/cs_distributor.png" alt="도매 및 총판 문의">도매 및 총판 문의</a>
+        <a href="mailto:J.Kim@asmodee.com"><img src="./images/cs_marketing.png" alt="마케팅 문의">마케팅 문의</a>
+        <a href="mailto:Jh.Park@Asmodee.Com"><img src="./images/cs_brand.png" alt="브랜드 문의">브랜드 문의</a>
       </section>
     </main>
-    <footer>
+
+
+    <!-- footer -->
+    <footer id="footer">
       <div class="logo">
         <a href="#">
           <img src="./images/logo.png" alt="아스모디 로고">
         </a>
       </div>
       <div class="address">
-        (14056) 경기 안양시 동안구 벌말로 123 A동 1901호<br>
+        <i class="las la-map-marker"></i>(14056) 경기 안양시 동안구 벌말로 123 A동 1901호<br>
         123 Beolmal-ro, Dongan-gu, Anyang-si A 1901, <br>
         Smart Bay Gyeonggi-do, 14056, Republic of Korea
       </div>
       <div class="call">
-        (82)-31-360-4288
+        <i class="las la-phone"></i>(82)-31-360-4288
       </div>
       <div class="copyright">
-        copyright C Asmodee Korea Limited
+        copyright <i class="las la-copyright"></i> Asmodee Korea Limited
       </div>
       <div class="sns">
-        페이스북 인스타그램 카카오톡 네이버블로그 온라인몰
+        <ul class="sns list">
+          <li>
+            <a href="https://www.facebook.com/AsmodeeKorea">페이스북</a>
+            <a href="https://www.instagram.com/asmodee_korea/"><img src="./images/icon_instagram.png" alt="인스타그램"></a>
+            <a href="https://pf.kakao.com/_WjxdmK"><img src="./images/icon_kakaotalk.png" alt="카카오톡"></a>
+            <a href="https://blog.naver.com/asmodeekorea"><img src="./images/icon_blog.png" alt="네이버 블로그"></a>
+            <a href="https://brand.naver.com/asmodeekorea"><img src="./images/icon_shop.png" alt="온라인몰"></a>
+          </li>
+        </ul>
       </div>
     </footer>
   </div>
