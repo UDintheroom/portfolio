@@ -11,9 +11,7 @@
     <header id="header">
       <!-- 로고 -->
       <h1 id="logo">
-        <a href="#">
-          아스모디
-        </a>
+        <a href="#">아스모디</a>
       </h1>
 
       <!-- 내비게이션(메뉴) -->
@@ -64,6 +62,7 @@
 
     <main id="main">
       <!-- 상단 배너 슬라이드 -->
+      <!-- 스와이퍼 넣기 -->
       <div class="slide">
         <ul>
           <li>
@@ -78,7 +77,8 @@
           <li>
             <img src="./images/main_4dobble.png" alt="도블 게임 사진">
           </li>
-        </ul>        
+        </ul>
+        <!-- h2 태그 두 개인 것은 이상하니 그냥 div로 처리 -->
         <div class="slogan 1">Great Games,</div>
         <div class="slogan 2">Amazing Stories</div>
       </div>
@@ -86,26 +86,36 @@
         아스모디 그룹은 <br>
         게임이 가진 이야기의 힘으로
       </span>
+      <!-- br 쓰지 말고 어차피 block으로 처리 되어서 사이 간격 조정 가능 -->
       <strong class="main-txt 2">
         50여국의 소비자들에게 <br>
         놀랍고 즐거운 경험을 선사합니다
       </strong>
 
       <!-- upcoming&new -->
-      <section class="sec-g sec-new">
+      <!-- 스와이퍼 -->
+      <section class="sec-g new">
+        <!-- 같은 느낌의 섹션끼리 묶어줄 필요가 있음 sec-g 추가 -->
         <h2 class="title">
           UPCOMING <br> &#38; NEW
         </h2>
-        <ul class="new-games">
+        <!-- h2슬로건 빠졌으니 h3를 h2로 수정 -->
+        <ul>
           <li>
             <img src="./images/b_canopy.jpg" alt="캐노피">
-
-            <span>캐노피</span>
-            <p>유통 &#32;하비게임몰</p>
-
-            <p>&#35;셋 콜렉션</p>
-            <p>&#35;카드 드래프트</p>
+            <div class="new-games canopy">
+              <div>
+                <span>캐노피</span>
+                <p>유통 &#32;하비게임몰</p>
+              </div>
+              <div class="tag">
+                <!-- 해시태그끼리 정렬 가능하도록 묶음 -->
+                <p>&#35;셋 콜렉션</p>
+                <p>&#35;카드 드래프트</p>
+              </div>
+          </div>
           </li>
+
           <li>
             <img src="./images/b_endless.jpg" alt="엔들리스 윈터">
             <span>엔들리스 윈터</span>
@@ -142,20 +152,24 @@
             <p>&#35;카드 드래프팅</p>
           </li>
         </ul>
-        <a href="#">READ ALL</a>
+        <a href="#" class="btn-more">READ ALL</a>
       </section>
 
       <!-- our games -->
-      <section class="sec-games">
-        <h3 class="title">OUR GAMES</h3>
+      <section class="seg-g games">
+        <!-- 스와이퍼 -->
+        <h2 class="title">OUR GAMES</h2>
+        <!-- image 배경에 깔기 -->
         <ul class="our-games">
           <li>
+            <!-- 로고 이미지도 배경에 깔기 -->
             <strong>티켓 투 라이드 로고</strong>
             <span>기차를 타고 대륙과 국가를 횡단하자&#33;</span>
             <p>알란 R. 문이 디자인하고 <br>
             Days of Wonder사에서 출시한 셋 콜렉션 게임 <br>
             다양한 버전이 있어 더욱 즐겁게&#33;</p>
           </li>
+
           <li>
             <img src="./images/game_7wonders.jpg" alt="세븐원더스 게임 플레이 사진">
             <img src="./images/logo_7wonders.png" alt="세븐 원더스 로고">
@@ -189,34 +203,33 @@
           찾을 수록 즐길 수록 재미있는 도블&#33;</p>
           </li>
         </ul>
+        <!-- 같은 더보기 버튼끼리 같은 클래스로 묶음 -->
         <a href="#" class="btn-more">MEET ALL GAMES</a>
       </section>
 
       <!-- files -->
-      <section class="sec-files">
-        <h3 class="title">FILES</h3>
+      <section class="sec-g files">
+        <h2 class="title">FILES</h2>
         <ul class="files">
           <li>
+            <!-- 얘네도 이미지 삭제 (배경에 깔기) -->
             <a href="#">규칙서</a>
           </li>
           <li>
-            <a href="#">
-            <span>구성물 파일</span>
-            </a>
+            <a href="#">구성물 파일</a>
           </li>
           <li>
-            <a href="#">
-            <span>기타</span>
-            </a>
+            <a href="#">기타</a>
           </li>
         </ul>
       </section>
 
       <!-- recent news -->
-      <section class="sec-news">
-        <h3 class="title">RECENT NEWS</h3>
+      <section class="sec-g news">
+        <h2 class="title">RECENT NEWS</h2>
         <ul class="news">
           <li>
+            <!-- news라서 ???성 이미지는 그대로 이미지로 넣음 / 검색해서 제대로 알고 있기 -->
             <a href="#">
             <img src="./images/news_11.jpg" alt="아코타임즈 11월호">
             <p>&#35;크리스마스의 악몽</p>
@@ -247,6 +260,7 @@
 
       <!-- CS center -->
       <section class="cs-center">
+        <!-- 여기도 이미지 제거 / 배경에 깔기 -->
         <a href="https://pf.kakao.com/_WjxdmK">소비자 상담</a>
         <a href="mailto:N.Song@asmodee.com"><img src="./images/cs_distributor.png" alt="도매 및 총판 문의">도매 및 총판 문의</a>
         <a href="mailto:J.Kim@asmodee.com"><img src="./images/cs_marketing.png" alt="마케팅 문의">마케팅 문의</a>
@@ -257,10 +271,9 @@
 
     <!-- footer -->
     <footer id="footer">
-      <div class="logo">
-        <a href="#">
-          <img src="./images/logo.png" alt="아스모디 로고">
-        </a>
+      <div class=ft-logo">
+        <!-- 이미지 제거 -->
+        <a href="#">아스모디 로고</a>
       </div>
       <div class="address">
         <i class="las la-map-marker"></i>(14056) 경기 안양시 동안구 벌말로 123 A동 1901호<br>
@@ -276,6 +289,7 @@
       <div class="sns">
         <ul class="sns list">
           <li>
+            <!-- 이미지 제거 -->
             <a href="https://www.facebook.com/AsmodeeKorea">페이스북</a>
             <a href="https://www.instagram.com/asmodee_korea/"><img src="./images/icon_instagram.png" alt="인스타그램"></a>
             <a href="https://pf.kakao.com/_WjxdmK"><img src="./images/icon_kakaotalk.png" alt="카카오톡"></a>
