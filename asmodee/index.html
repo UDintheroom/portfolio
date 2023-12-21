@@ -15,8 +15,7 @@
 <meta property="og:description" content="페이지 설명" />
 <meta
   property="og:image"
-  content="http://www.mysite.com/article/article1_featured_image.jpg"
-/>
+  content="http://www.mysite.com/article/article1_featured_image.jpg"/>
 <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="페이지 제목" />
@@ -43,17 +42,17 @@
 <!-- google symbols -->
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0"
-/>
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0"/>
 <!-- font awsome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <!-- swiper -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 <link rel="stylesheet" href="./assets/css/comm.css">
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- defer 붙여야 끝까지 다 읽고 설정해줌 -->
 <script defer src="./assets/js/comm.js"></script>
 </head>
@@ -66,95 +65,129 @@
 
   <div class="wrap">
     <header id="header">
-      <!-- 로고 -->
-      <h1 id="logo" class="logo">
-        <a href="#">아스모디</a>
-      </h1>
-      <!-- 내비게이션(메뉴) -->
-      <nav class="gnb-wrap">
-        <input type="checkbox" name="gnbNav" id="gnbNav" class="input-burger">
-        <label for="gnbNav" class="label-burger">
-          <span class="blind">전체 메뉴 보기</span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </label>
-        <div id="gnb">
-          <ul class="depth1">
-            <li>
-              <a href="#">회사소개</a>
-            </li>
-            <li>
-              <a href="#">제품소개</a>
-              <ul class="depth2">
-                <li>
-                  <a href="#">보드게임</a>
-                  <ul class="depth3">
-                    <li><a href="#">가족 / 캐주얼 게임</a></li>
-                    <li><a href="#">파티 게임</a></li>
-                    <li><a href="#">전략 / 게이머스 게임</a></li>
-                  </ul>
+      <div class="inner">
+          <!-- 로고 -->
+        <h1 id="logo" class="logo">
+          <a href="#">아스모디</a>
+        </h1>
+        <!-- 내비게이션(메뉴) -->
+        <div class="gnb-wrap">
+          <input type="checkbox" name="gnbNav" id="gnbNav" class="inp-burger">
+          <label for="gnbNav" class="label-burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <div class="blind">전체 메뉴 보기</div>
+          </label>
+          <nav id="gnb">
+            <ul class="depth1">
+              <li>
+                <a href="#">회사소개</a>
               </li>
-                <li><a href="#">매직 &#58; 더 게더링 카드 게임</a></li>
-                <li><a href="#">직소퍼즐</a></li>
-                <li><a href="#">서적</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">아스모디 에듀</a>
-            </li>
-            <li>
-              <a href="#">자료실</a>
-              <ul class="depth2">
-                <li><a href="#">규칙서</a></li>
-                <li><a href="#">구성물 파일</a></li>
-                <li><a href="#">기타</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">문의하기</a>
-            </li>
-          </ul>
-          <div class="language">
-            <a href="#">KO</a>
-            <a href="#">EN</a>
-          </div>
+              <li>
+                <a href="#">제품소개</a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#">보드게임</a>
+                    <ul class="depth3">
+                      <li><a href="#">가족 / 캐주얼 게임</a></li>
+                      <li><a href="#">파티 게임</a></li>
+                      <li><a href="#">전략 / 게이머스 게임</a></li>
+                    </ul>
+                </li>
+                  <li><a href="#">매직 &#58; 더 게더링 카드 게임</a></li>
+                  <li><a href="#">직소퍼즐</a></li>
+                  <li><a href="#">서적</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">아스모디 에듀</a>
+              </li>
+              <li>
+                <a href="#">자료실</a>
+                <ul class="depth2">
+                  <li><a href="#">규칙서</a></li>
+                  <li><a href="#">구성물 파일</a></li>
+                  <li><a href="#">기타</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">문의하기</a>
+              </li>
+            </ul>
+            <div class="language">
+              <a href="#">KO</a>
+              <a href="#">EN</a>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
 
     <main id="main">
       <!-- 상단 배너 슬라이드 -->
-      <!-- 스와이퍼 넣기 -->
       <div class="slide">
-        <ul>
-          <li>
-            <img src="./images/main_1dixit.png" alt="딕싯 게임 사진">
-          </li>
-          <li>
-            <img src="./images/main_2t2r.png" alt="티켓투라이드 게임 사진">
-          </li>
-          <li>
-            <img src="./images/main_3splendor.png" alt="스플렌더 게임 사진">
-          </li>
-          <li>
-            <img src="./images/main_4dobble.png" alt="도블 게임 사진">
-          </li>
-        </ul>
-        <!-- h2 태그 두 개인 것은 이상하니 그냥 div로 처리 -->
-        <div class="slogan 1">Great Games,</div>
-        <div class="slogan 2">Amazing Stories</div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/main_1dixit.png" alt="딕싯 게임 사진">
+              <div class="slogan">
+                <div class="slogan-txt 1">Great Games,</div>
+                <div class="slogan-txt 2">Amazing Stories</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/main_2t2r.png" alt="티켓투라이드 게임 사진">
+              <div class="slogan">
+                <div class="slogan-txt 1">Great Games,</div>
+                <div class="slogan-txt 2">Amazing Stories</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/main_3splendor.png" alt="스플렌더 게임 사진">
+              <div class="slogan">
+                <div class="slogan-txt 1">Great Games,</div>
+                <div class="slogan-txt 2">Amazing Stories</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/main_4dobble.png" alt="도블 게임 사진">
+              <div class="slogan">
+                <div class="slogan-txt 1">Great Games,</div>
+                <div class="slogan-txt 2">Amazing Stories</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <span class="main-txt 1">
         아스모디 그룹은 <br>
         게임이 가진 이야기의 힘으로
       </span>
-      <!-- br 쓰지 말고 어차피 block으로 처리 되어서 사이 간격 조정 가능 -->
       <strong class="main-txt 2">
         50여국의 소비자들에게 <br>
         놀랍고 즐거운 경험을 선사합니다
       </strong>
+
+      <!-- 업커밍앤뉴!!!!카드@@@@만들어보려구@@@@@@@ -->
+      <a href="#">
+        <div class="card new">
+          <div class="card-hd">
+            <span class="blind">이미지</span>
+          </div>
+          <div class="card-bd">
+            <span class="card-bd-tit">game title</span>
+            <p class="card-bd-txt">company name</p>
+          </div>
+          <div class="card-ft">
+              <p class="card-ft-tag">#lorem</p>
+              <p class="card-ft-tag">#lorem</p>
+          </div>
+        </div>
+      </a>
 
       <!-- upcoming&new -->
       <!-- 스와이퍼 -->

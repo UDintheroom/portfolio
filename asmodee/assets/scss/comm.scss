@@ -1,44 +1,119 @@
 @import 'variables','mixin','fonts','reset';
 
 // 공통으로 쓰이는 스타일들
-#header{
+
+//layout
+.wrap{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.gnb-wrap {
-  .input-burger{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    opacity: 0;
+.inner{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#header{
+  height: $hdH;
+}
+#main{
+  flex-grow: 1;
+}
+#footer{
+  height: $ftH;
+}
+
+//header
+#logo{
+  position: relative;
+  z-index: 1100;
+}
+#header{
+  .inner{
+    display: flex;
+    @include flex($justify: space-between)
   }
-  .label-burger{
-    position: relative;
-    z-index: 1100;
-    @include flex($direction: column);
-    width: 40px;
-    height: 70px;
-      .bar{
-        display: block;
-        width: 26px;
-        height: 2px;
-        background: $black;
-        margin: 3px 0;
+
+  #gnb{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+    background: $primary;
+    transition: left 0.2s;
+  }
+
+  .gnb-wrap{
+    .inp-burger{
+      // 체크박스 없애기
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border: none;
+      opacity: 0;
+      visibility: hidden;
+      // input(체크박스) 체크 됐을 때
+      &:checked{
+        &+ .label-burger{
+          .bar{
+            &:nth-child(1){
+              transform: translateY(3.5px) rotate(45deg);
+            }
+            &:nth-child(2){
+              display: none;
+            }
+            &:nth-child(3){
+              transform: translateY(-3.5px) rotate(-45deg);
+            }
+          }
         }
-      }
-      #gnb{
-        position: fixed;
-        
+        // gnb가 체크 됐을 때
+        & ~ #gnb{
+          display: flex;
+          left: 0;
+        }
       }
     }
 
+    // 선택 안 됐을 때 디자인
+    .label-burger{
+      position: relative;
+      z-index: 1100;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      width: 30px;
+      height: 70px;
+      cursor: pointer;
+      .bar{
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: $b;
+        border-radius: 3px;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
 
 // btn style
 
 // card style
+.card{
+
+  &:hover{
+    
+  }
+}
 
 // list style
 
