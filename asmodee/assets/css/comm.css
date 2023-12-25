@@ -113,7 +113,7 @@ input[type=search]::-webkit-search-cancel-button {
 body {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", sans-serif, "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   color: #333;
 }
 
@@ -255,6 +255,14 @@ legend {
   content: "";
 }
 
+.title {
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #00C1C1;
+  transform: skew(-12deg, 0);
+}
+
 .wrap {
   display: flex;
   flex-direction: column;
@@ -279,6 +287,7 @@ legend {
 }
 
 #logo {
+  background-image: url(../../images/logo.png);
   position: relative;
   z-index: 1100;
 }
@@ -345,4 +354,61 @@ legend {
   background: #000;
   border-radius: 3px;
   transition: all 0.3s;
+}
+
+.dix {
+  background-image: url(../../images/main_1dixit.png);
+}
+
+.t2r {
+  background-image: url(../../images/main_2t2r.png);
+}
+
+.spl {
+  background-image: url(../../images/main_3splendor.png);
+}
+
+.dob {
+  background-image: url(../../images/main_4dobble.png);
+}
+
+.main-txt {
+  font-size: 20px;
+}
+.main-txttxt1 {
+  font-weight: 400;
+}
+.main-txt.txt2 {
+  font-weight: 600;
+  color: #00C1C1;
+}
+
+.card {
+  height: 400px;
+  width: 350px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 30px 30px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+.card .card-image {
+  width: 100%;
+  height: 270px;
+  border-radius: 15px 15px 0 0;
+  background-image: url(../../images/b_canopy.jpg);
+  background-size: 100% 280px;
+  background-repeat: no-repeat;
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .card-hd {
+  font-weight: 700;
+  font-size: 19px;
+}
+.card .card-txt {
+  font-weight: 400;
+  font-size: 16px;
+  color: #444;
 }/*# sourceMappingURL=comm.css.map */

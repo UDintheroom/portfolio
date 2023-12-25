@@ -1,6 +1,13 @@
 @import 'variables','mixin','fonts','reset';
 
 // 공통으로 쓰이는 스타일들
+.title{
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: $primary;
+  transform: skew(-12deg, 0);
+}
 
 //layout
 .wrap{
@@ -24,6 +31,7 @@
 
 //header
 #logo{
+  background-image: url(../../images/logo.png);
   position: relative;
   z-index: 1100;
 }
@@ -105,14 +113,64 @@
   }
 }
 
+// main slide
+.dix{
+  background-image: url(../../images/main_1dixit.png);
+}
+.t2r{
+  background-image: url(../../images/main_2t2r.png);
+}
+.spl{
+  background-image: url(../../images/main_3splendor.png);
+}
+.dob{
+  background-image: url(../../images/main_4dobble.png);
+}
+
+.main-txt{
+  font-size: 20px;
+  &txt1{
+    font-weight: 400;
+  }
+  &.txt2{
+    font-weight: 600;
+    color: $primary;
+    }
+}
+
 // btn style
 
 // card style
 .card{
-
-  &:hover{
-    
+  height: 400px;
+  width: 350px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 30px 30px 0 30px;
+  position: relative;
+  overflow: hidden;
+  .card-image{
+    width: 100%;
+    height: 270px;
+    border-radius: 15px 15px 0 0;
+    background-image: url(../../images/b_canopy.jpg);
+    // image size 수정
+    background-size: 100% 280px;
+    background-repeat: no-repeat;
   }
+  &:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .card-hd{
+    font-weight: 700;
+    font-size: 19px;
+  }
+  .card-txt{
+    font-weight: 400;
+    font-size: 16px;
+    color: $txtsecon;
+  }
+  // card-ft hashtag 작업할 것
 }
 
 // list style

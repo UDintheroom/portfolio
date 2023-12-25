@@ -18,7 +18,7 @@
   content="http://www.mysite.com/article/article1_featured_image.jpg"/>
 <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="페이지 제목" />
+<meta name="twditter:title" content="페이지 제목" />
 <meta name="twitter:description" content="페이지 설명" />
 <meta
   name="twitter:image"
@@ -30,6 +30,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
 />
+<!-- pretendard fonts -->
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 <!-- google fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +39,7 @@
 <!-- google icons -->
 <link
   href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
-  rel="stylesheet"
-/>
+  rel="stylesheet"/>
 <!-- google symbols -->
 <link
   rel="stylesheet"
@@ -131,29 +132,25 @@
         <!-- Swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/main_1dixit.png" alt="딕싯 게임 사진">
+            <div class="dix swiper-slide">
               <div class="slogan">
                 <div class="slogan-txt 1">Great Games,</div>
                 <div class="slogan-txt 2">Amazing Stories</div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="./images/main_2t2r.png" alt="티켓투라이드 게임 사진">
+            <div class="t2r swiper-slide">
               <div class="slogan">
                 <div class="slogan-txt 1">Great Games,</div>
                 <div class="slogan-txt 2">Amazing Stories</div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="./images/main_3splendor.png" alt="스플렌더 게임 사진">
+            <div class="spl swiper-slide">
               <div class="slogan">
                 <div class="slogan-txt 1">Great Games,</div>
                 <div class="slogan-txt 2">Amazing Stories</div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="./images/main_4dobble.png" alt="도블 게임 사진">
+            <div class="dob swiper-slide">
               <div class="slogan">
                 <div class="slogan-txt 1">Great Games,</div>
                 <div class="slogan-txt 2">Amazing Stories</div>
@@ -163,30 +160,32 @@
         </div>
       </div>
 
-      <span class="main-txt 1">
+      <span class="main-txt txt1">
         아스모디 그룹은 <br>
         게임이 가진 이야기의 힘으로
       </span>
-      <strong class="main-txt 2">
+      <strong class="main-txt txt2">
         50여국의 소비자들에게 <br>
         놀랍고 즐거운 경험을 선사합니다
       </strong>
 
       <!-- 업커밍앤뉴!!!!카드@@@@만들어보려구@@@@@@@ -->
       <a href="#">
-        <div class="card new">
-          <div class="card-hd">
-            <span class="blind">이미지</span>
-          </div>
-          <div class="card-bd">
-            <span class="card-bd-tit">game title</span>
-            <p class="card-bd-txt">company name</p>
-          </div>
-          <div class="card-ft">
-              <p class="card-ft-tag">#lorem</p>
-              <p class="card-ft-tag">#lorem</p>
-          </div>
+       <div class="card">
+        <div class="card-image">
+          image
         </div>
+        <div class="card-hd">
+          game title
+        </div>
+        <div class="card-txt">
+          company name
+        </div>
+        <div class="card-ft">
+          <p>hash tag</p>
+          <p>hash tag</p>
+        </div>
+       </div>
       </a>
 
       <!-- upcoming&new -->
