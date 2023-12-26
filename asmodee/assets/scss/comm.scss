@@ -114,18 +114,28 @@
 }
 
 // main slide
-.dix{
-  background-image: url(../../images/main_1dixit.png);
+.swiper-slide{
+  height: 600px;
+  position: relative;
+  &.dix{
+    background-image: url(../../images/main_1dixit.png);
+  }
+  &.t2r{
+    background-image: url(../../images/main_2t2r.png);
+  }
+  &.spl{
+    background-image: url(../../images/main_3splendor.png);
+  }
+  &.dob{
+    background-image: url(../../images/main_4dobble.png);
+  }
+  .slogan{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
-.t2r{
-  background-image: url(../../images/main_2t2r.png);
-}
-.spl{
-  background-image: url(../../images/main_3splendor.png);
-}
-.dob{
-  background-image: url(../../images/main_4dobble.png);
-}
+
 
 .main-txt{
   font-size: 20px;
@@ -139,8 +149,17 @@
 }
 
 // btn style
+.btn-more{
+  // 가로 길이 설정하기
+  display: flex;
+  height: 40px;
+  border-radius: 25px;
+  background: $b;
+  color: $w;
+}
 
 // card style
+  // main new games
 .card{
   height: 400px;
   width: 350px;
@@ -155,11 +174,11 @@
     border-radius: 15px 15px 0 0;
     background-image: url(../../images/b_canopy.jpg);
     // image size 수정
-    background-size: 100% 280px;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
   &:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
   .card-hd{
     font-weight: 700;
@@ -171,6 +190,29 @@
     color: $txtsecon;
   }
   // card-ft hashtag 작업할 것
+  .card-ft{
+    display: flex;
+    .hash{
+      margin-right: 5px;
+      background: $secondary;
+      border-radius: 12px;
+    }
+  }
+}
+  // main our games
+.our-games{
+  display: flex;
+  
+  height: 500px;
+  &.ttr{
+    background-image: url(../../images/main_2t2r.png);
+    .ttr-logo{
+      width: 100%;
+      background-image: url(../../images/logo_t2r.png);
+      background-repeat: no-repeat;
+    }
+  }
+  // background-image: url(../../images/logo_t2r.png);
 }
 
 // list style
