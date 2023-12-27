@@ -203,10 +203,10 @@
       <!-- 스와이퍼 -->
       <section class="sec-g new">
         <!-- 같은 느낌의 섹션끼리 묶어줄 필요가 있음 sec-g 추가 -->
-        <h2 class="title">
+        <h2 class="title txt-up">
           UPCOMING
         </h2>
-        <h2 class="title">
+        <h2 class="title txt-new">
           &#38; NEW
         </h2>
         <!-- h2슬로건 빠졌으니 h3를 h2로 수정 -->
@@ -237,7 +237,7 @@
             <div class="swiper-slide second-slide">
               <a href="#">
                 <div class="card">
-                 <div class="card-image card-can">
+                 <div class="card-image card-oce">
                  </div>
                  <div class="card-inner">
                   <div class="card-main">
@@ -259,7 +259,7 @@
             <div class="swiper-slide second-slide">
               <a href="#">
                 <div class="card">
-                 <div class="card-image card-can">
+                 <div class="card-image card-tts">
                  </div>
                  <div class="card-inner">
                   <div class="card-main">
@@ -281,7 +281,7 @@
             <div class="swiper-slide second-slide">
               <a href="#">
                 <div class="card">
-                 <div class="card-image card-can">
+                 <div class="card-image card-ttg">
                  </div>
                  <div class="card-inner">
                   <div class="card-main">
@@ -303,7 +303,7 @@
             <div class="swiper-slide second-slide">
               <a href="#">
                 <div class="card">
-                 <div class="card-image card-can">
+                 <div class="card-image card-fla">
                  </div>
                  <div class="card-inner">
                   <div class="card-main">
@@ -325,7 +325,7 @@
             <div class="swiper-slide second-slide">
               <a href="#">
                 <div class="card">
-                 <div class="card-image card-can">
+                 <div class="card-image card-end">
                  </div>
                  <div class="card-inner">
                   <div class="card-main">
@@ -347,106 +347,96 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <a href="#" class="btn-more">READ ALL</a>
+        <a href="#" class="btn-more">
+          READ ALL <i class="las la-angle-right"></i>
+        </a>
       </section>
 
       <!-- our games -->
       <section class="seg-g games">
         <h2 class="title">OUR GAMES</h2>
-        <!-- image 배경에 깔기 -->
-        <div class="our-games ttr">
-          <strong class="ttr-logo">티켓 투 라이드 로고</strong>
+        <div class="our-games ttri">
+          <strong class="game-logo ttri-logo">티켓 투 라이드 로고</strong>
           <span>기차를 타고 대륙과 국가를 횡단하자&#33;</span>
           <p>알란 R. 문이 디자인하고 <br>
           Days of Wonder사에서 출시한 셋 콜렉션 게임 <br>
           다양한 버전이 있어 더욱 즐겁게&#33;</p>
         </div>
-        <ul class="our-games">
-            <!-- 로고 이미지도 배경에 깔기 -->
-          <li>
-            <img src="./images/game_7wonders.jpg" alt="세븐원더스 게임 플레이 사진">
-            <img src="./images/logo_7wonders.png" alt="세븐 원더스 로고">
-            <span>고대 7대 도시 문명을 발전시키자&#33;</span>
-            <p>2010년 에센에서 호평을 받은<br>
+        <div class="our-games seve">
+          <strong class="game-logo seve-logo">세븐원더스 로고</strong>
+          <span>고대 7대 도시 문명을 발전시키자&#33;</span>
+          <p>2010년 에센에서 호평을 받은<br>
             프랑스 디자이너 앙트완 보우자의 게임<br>
             카드 드래프팅 방식으로 빠르고 간결하게&#33;</p>
-          </li>
-          <li>
-            <img src="./images/main_3splendor.png" alt="스플렌더 게임 플레이 사진">
-            <img src="./images/logo_splendor.png" alt="스플렌더 로고">
-            <span>최고의 보석상이 되어보자&#33;</span>
-            <p>르네상스 시대, 상인 조합의 수장으로서<br>
+        </div>
+        <div class="our-games sple">
+          <strong class="game-logo sple-logo">스플렌더 로고</strong>
+          <span>최고의 보석상이 되어보자&#33;</span>
+          <p>르네상스 시대, 상인 조합의 수장으로서<br>
             건설과 투자, 자원 활용으로 귀족들의 후원을 받는<br>
             쉬운 룰이지만 치밀한 작전 싸움&#33;</p>
-          </li>
-          <li>
-            <img src="./images/main_1dixit.png" alt="딕싯 게임 플레이 사진">
-            <img src="./images/logo_dixit.png" alt="딕싯 로고">
-            <span>하나의 그림 속에 천가지 생각&#33;</span>
-            <p>2010년 Spiel des Jahres를 비롯해<br>
+        </div>
+        <div class="our-games dixi">
+          <strong class="game-logo dixi-logo">딕싯 로고</strong>
+          <span>하나의 그림 속에 천가지 생각&#33;</span>
+          <p>2010년 Spiel des Jahres를 비롯해<br>
             여러 보드게임 상을 수상한 명작 게임<br>
           감성적인 디자인에 빠져들어 즐겁게&#33;</p>
-          </li>
-          <li>
-            <img src="./images/main_4dobble.png" alt="도블 게임 플레이 사진">
-            <img src="./images/logo_dobble.png" alt="도블 로고">
-            <span>같은 그림 딱 하나를 찾아라&#33;</span>
-            <p>어떤 카드 2장을 펼쳐도 똑같은 그림은 단 하나 뿐이지만<br>
+        </div>
+        <div class="our-games dobb">
+          <strong class="game-logo dobb-logo">도블 로고</strong>
+          <span>같은 그림 딱 하나를 찾아라&#33;</span>
+          <p>어떤 카드 2장을 펼쳐도 똑같은 그림은 단 하나 뿐이지만<br>
             진행 방식은 여러가지인 카드 게임<br>
           찾을 수록 즐길 수록 재미있는 도블&#33;</p>
-          </li>
-        </ul>
+        </div>
         <!-- 같은 더보기 버튼끼리 같은 클래스로 묶음 -->
-        <a href="#" class="btn-more">MEET ALL GAMES</a>
+        <a href="#" class="btn-more">
+          MEET ALL GAMES <i class="las la-angle-right"></i>
+        </a>
       </section>
 
       <!-- files -->
       <section class="sec-g files">
         <h2 class="title">FILES</h2>
-        <ul class="files">
-          <li>
-            <!-- 얘네도 이미지 삭제 (배경에 깔기) -->
-            <a href="#">규칙서</a>
-          </li>
-          <li>
-            <a href="#">구성물 파일</a>
-          </li>
-          <li>
-            <a href="#">기타</a>
-          </li>
-        </ul>
+        <div class="download">
+          <a href="#" class="rule">규칙서</a>
+          <a href="#" class="tool">구성물 파일</a>
+          <a href="#" class="etc">기타</a>
+        </div>
       </section>
 
       <!-- recent news -->
       <section class="sec-g news">
         <h2 class="title">RECENT NEWS</h2>
-        <ul class="news">
-          <li>
-            <!-- news라서 ???성 이미지는 그대로 이미지로 넣음 / 검색해서 제대로 알고 있기 -->
-            <a href="#">
-            <img src="./images/news_11.jpg" alt="아코타임즈 11월호">
-            <p>&#35;크리스마스의 악몽</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/news_10.png" alt="아코타임즈 10월호">
-              <p>&#35;백로성</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/news_09.jpg" alt="아코타임즈 9월호">
-              <p>&#35;태양 너머로 &#43; 확장</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/news_08.jpg" alt="아코타임즈 8월호">
-              <p>&#35;엘더베일의 거처</p>
-            </a>
-          </li>
-        </ul>
+        <div class="swiper mySwiper news-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide third-slide">        
+              <a href="#">
+                <img src="./images/news_11.jpg" alt="아코타임즈 11월호">
+                <p>&#35;크리스마스의 악몽</p>
+             </a>
+            </div>
+            <div class="swiper-slide third-slide">        
+              <a href="#">
+                <img src="./images/news_10.png" alt="아코타임즈 10월호">
+                <p>&#35;백로성</p>
+              </a>
+            </div>
+            <div class="swiper-slide third-slide">        
+              <a href="#">
+                <img src="./images/news_09.jpg" alt="아코타임즈 9월호">
+                <p>&#35;태양 너머로 &#43; 확장</p>
+              </a>
+            </div>
+            <div class="swiper-slide third-slide">        
+              <a href="#">
+                <img src="./images/news_08.jpg" alt="아코타임즈 8월호">
+                <p>&#35;엘더베일의 거처</p>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <hr>

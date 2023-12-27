@@ -286,11 +286,18 @@ legend {
 }
 
 .title {
+  margin: 100px 0 20px 0;
   font-size: 52px;
   font-weight: 900;
   font-style: italic;
   letter-spacing: -3px;
   color: #00C1C1;
+}
+.title.txt-up {
+  margin-top: 65px;
+}
+.title.txt-new {
+  margin-top: -55px;
 }
 
 #logo {
@@ -361,6 +368,16 @@ legend {
   background: #000;
   border-radius: 3px;
   transition: all 0.3s;
+}
+
+.btn-more {
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 12px 24px;
+  border-radius: 24px;
+  margin: 20px 0 100px 0;
 }
 
 .first-slide {
@@ -435,19 +452,9 @@ legend {
   font-weight: 400;
 }
 .main-txt.txt2 {
-  margin: 10px 0 65px 0;
+  margin-top: 10px;
   font-weight: 600;
   color: #00C1C1;
-}
-
-.btn-more {
-  background: #000;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 800;
-  padding: 12px 24px;
-  border-radius: 24px;
-  margin: 20px 0 100px 0;
 }
 
 .card {
@@ -456,8 +463,7 @@ legend {
   border-radius: 9px;
   display: flex;
   flex-direction: column;
-  outline: 1px solid #ccc;
-  margin-top: 20px;
+  border: 1px solid #ccc;
 }
 .card .card-image {
   border-radius: 9px 9px 0 0;
@@ -468,6 +474,26 @@ legend {
 .card .card-image.card-can {
   background-image: url(../../images/b_canopy.jpg);
   background-position: 0 -69px;
+}
+.card .card-image.card-oce {
+  background-image: url(../../images/b_oceans.jpg);
+  background-position: 0 -13px;
+}
+.card .card-image.card-tts {
+  background-image: url(../../images/b_t2rs.jpg);
+  background-position: 0 -6px;
+}
+.card .card-image.card-ttg {
+  background-image: url(../../images/b_t2rg.jpg);
+  background-position: 0 -4px;
+}
+.card .card-image.card-fla {
+  background-image: url(../../images/b_flamecraft.jpg);
+  background-position: 0 -2px;
+}
+.card .card-image.card-end {
+  background-image: url(../../images/b_endless.jpg);
+  background-position: 0 -51px;
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -504,13 +530,123 @@ legend {
 
 .our-games {
   display: flex;
-  height: 500px;
-}
-.our-games.ttr {
-  background-image: url(../../images/main_2t2r.png);
-}
-.our-games.ttr .ttr-logo {
-  width: 100%;
-  background-image: url(../../images/logo_t2r.png);
+  flex-direction: column;
+  align-items: center;
+  width: 358px;
+  height: 494px;
+  border-radius: 9px;
   background-repeat: no-repeat;
+  background-size: cover;
+  padding: 206px 15px 46px 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.our-games .game-logo {
+  background-position: center 0;
+  text-indent: -9999px;
+  position: relative;
+  width: 100%;
+  height: 152px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.our-games span {
+  margin-top: 7px;
+  font-size: 19px;
+  font-weight: 800;
+  color: #fff;
+}
+.our-games p {
+  letter-spacing: -0.7px;
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: normal;
+}
+.our-games.ttri {
+  background-image: url(../../images/main_2t2r.png);
+  background-position: -747px 0;
+}
+.our-games .ttri-logo {
+  background-image: url(../../images/logo_t2r.png);
+}
+.our-games.seve {
+  background-image: url(../../images/game_7wonders.jpg);
+  background-position: -431px 0;
+}
+.our-games .seve-logo {
+  background-image: url(../../images/logo_7wonders.png);
+}
+.our-games.sple {
+  background-image: url(../../images/main_3splendor.png);
+  background-position: -431px 0;
+}
+.our-games .sple-logo {
+  background-image: url(../../images/logo_splendor.png);
+}
+.our-games.dixi {
+  background-image: url(../../images/main_1dixit.png);
+  background-position: -431px 0;
+}
+.our-games .dixi-logo {
+  background-image: url(../../images/logo_dixit.png);
+}
+.our-games.dobb {
+  background-image: url(../../images/main_4dobble.png);
+  background-position: -431px 0;
+}
+.our-games .dobb-logo {
+  background-image: url(../../images/logo_dobble.png);
+}
+
+.sec-g .download {
+  display: flex;
+  flex-direction: column;
+}
+.sec-g .download a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 358px;
+  height: 180px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  background-size: cover;
+  margin-top: 15px;
+}
+.sec-g .download .rule {
+  background-image: url(../../images/files_rule.jpg);
+}
+.sec-g .download .tool {
+  background-image: url(../../images/files_files.jpg);
+  background-position: 0 -10px;
+}
+.sec-g .download .etc {
+  background-image: url(../../images/files_etc.jpg);
+  background-position: 0 -160px;
+}
+
+.news-slide .third-slide {
+  width: 80%;
+}
+.news-slide .third-slide a {
+  display: flex;
+  width: 358px;
+  height: 347px;
+}
+.news-slide .third-slide a img {
+  border-radius: 9px;
+}
+.news-slide .third-slide p {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  padding: 11px 6px;
+  border-radius: 12px;
+  color: #fff;
+  background: #00C1C1;
 }/*# sourceMappingURL=comm.css.map */
