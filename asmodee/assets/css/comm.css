@@ -289,7 +289,7 @@ legend {
   font-size: 52px;
   font-weight: 900;
   font-style: italic;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
   color: #00C1C1;
 }
 
@@ -402,13 +402,13 @@ legend {
   height: 100%;
 }
 
-.swiper-slide {
+.second-slide {
   width: 80%;
 }
 
 .swiper-pagination {
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -441,11 +441,13 @@ legend {
 }
 
 .btn-more {
-  display: flex;
-  height: 40px;
-  border-radius: 25px;
   background: #000;
   color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 12px 24px;
+  border-radius: 24px;
+  margin: 20px 0 100px 0;
 }
 
 .card {

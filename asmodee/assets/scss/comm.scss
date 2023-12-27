@@ -36,7 +36,7 @@
   font-size: 52px;
   font-weight: 900;
   font-style: italic;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
   color: $primary;
 }
 
@@ -160,17 +160,17 @@
   }
 }
 
-
+// new games slide
 .swiper {
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
+.second-slide {
   width: 80%;
 }
 .swiper-pagination{
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .swiper-pagination-bullet{
   width: 7px;
@@ -181,8 +181,7 @@
 }
 .swiper-pagination-bullet-active{
   width: 40px;
-  transition:
-  width .5s;
+  transition: width .5s;
   border-radius: 5px;
   background: $primary;
   border: 1px solid transparent;
@@ -204,12 +203,13 @@
 
 // btn style
 .btn-more{
-  // 가로 길이 설정하기
-  display: flex;
-  height: 40px;
-  border-radius: 25px;
   background: $b;
   color: $w;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 12px 24px;
+  border-radius: 24px;
+  margin: 20px 0 100px 0;
 }
 
 // card style
@@ -270,7 +270,6 @@
   // main our games
 .our-games{
   display: flex;
-  
   height: 500px;
   &.ttr{
     background-image: url(../../images/main_2t2r.png);
