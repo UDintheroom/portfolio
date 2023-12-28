@@ -152,6 +152,7 @@
     // 마진 값 수정 필요 - 어떻게 해야되지 각기 다른 마진
     // 배경에 블랙 깔기
   .our-games{
+    // position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,20 +161,19 @@
     border-radius: 9px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 206px 15px 46px 15px;
     margin-bottom: 15px;
     text-align: center;
     .game-logo{
+      // position: absolute;
+      margin: 206px 0 7px 0;
       background-position: center 0;
       text-indent: -9999px;
-      position: relative;
       width: 100%;
       height: 152px;
       background-size: contain;
       background-repeat: no-repeat;
     }
     span{
-      margin-top: 7px;
       font-size: 19px;
       font-weight: 800;
       color: $w;
@@ -256,25 +256,66 @@
   }
 }
 
+// recent news
+// 검은 배경 깔기
 .news-slide{
   .third-slide {
-    width: 80%;
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    p{
+      position: absolute;
+      left: 25px;
+      bottom: 20px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      padding: 6px 11px;
+      border-radius: 12px;
+      color: $w;
+      background: $primary;
+    }
     a{
       display: flex;
+      position: relative;
       width: 358px;
       height: 347px;
       img{
         border-radius: 9px;
       }
     }
-    p{
-      font-size: 10px;
+  }
+}
+
+hr{
+  display: block;
+  margin: 70px 0;
+}
+
+.cs-center{
+  display: flex;
+  .cs-center-inner{
+    display: flex;
+    flex-wrap: wrap;
+    a{
+      width: 130px;
+      height: 130px;
+      background-size: cover;
+      overflow: hidden;
+      font-size: 18px;
       font-weight: 600;
-      letter-spacing: -2px;
-      padding: 11px 6px;
-      border-radius: 12px;
-      color: $w;
-      background: $primary;
+    }
+    .cs-con{
+      background-image: url(../../images/cs_consumer.png);
+    }
+    .cs-dis{
+      background-image: url(../../images/cs_distributor.png);
+    }
+    .cs-mar{
+      background-image: url(../../images/cs_marketing.png);
+    }
+    .cs-bra{
+      background-image: url(../../images/cs_brand.png);
     }
   }
 }
