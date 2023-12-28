@@ -32,45 +32,44 @@
     }
   }
 }
-
-// new games slide
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.second-slide {
-  width: 80%;
-}
-.swiper-pagination{
-  position: relative;
-  margin-top: 20px;
-}
-.swiper-pagination-bullet{
-  width: 7px;
-  height: 7px;
-  background: transparent;
-  border: 1px solid $secondary;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active{
-  width: 40px;
-  transition: width .5s;
-  border-radius: 5px;
-  background: $primary;
-  border: 1px solid transparent;
-}
 .main-txt{
   font-size: 20px;
   display: flex;
-  &txt1{
-    font-weight: 400;
-  }
   &.txt2{
     margin-top: 10px;
     font-weight: 600;
     color: $primary;
     }
 }
+
+// new games slide
+.new-slide {
+  width: 100%;
+  height: 100%;
+  .second-slide {
+    display: flex;
+    width: 80%;
+  }
+  .swiper-pagination{
+    position: relative;
+    margin-top: 20px;
+  }
+  .swiper-pagination-bullet{
+    width: 7px;
+    height: 7px;
+    background: transparent;
+    border: 1px solid $secondary;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    width: 40px;
+    transition: width .5s;
+    border-radius: 5px;
+    background: $primary;
+    border: 1px solid transparent;
+  }
+}
+
 
 // card style
   // main : new games
@@ -127,7 +126,6 @@
           font-size: 19px;
         }
         .card-txt{
-          font-weight: 400;
           font-size: 16px;
           color: $txtsecon;
         }
@@ -165,7 +163,7 @@
     text-align: center;
     .game-logo{
       // position: absolute;
-      margin: 206px 0 7px 0;
+      margin: 206px 48px 7px 48px;
       background-position: center 0;
       text-indent: -9999px;
       width: 100%;
@@ -182,7 +180,6 @@
       letter-spacing: -0.7px;
       margin-top: 3px;
       font-size: 16px;
-      font-weight: 400;
       color: $w;
       // text-align: center;
       line-height: normal;
@@ -258,11 +255,11 @@
 
 // recent news
 // 검은 배경 깔기
-.news-slide{
+.news-slide {
   .third-slide {
     position: relative;
     display: inline-block;
-    width: 75%;
+    width: 80%;
     p{
       position: absolute;
       left: 25px;
@@ -287,23 +284,30 @@
   }
 }
 
+
 hr{
   display: block;
   margin: 70px 0;
 }
 
+// 수정중
 .cs-center{
-  display: flex;
-  .cs-center-inner{
+  .title{
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 0;
+  margin-bottom: 0;
+  padding: 0;
+  }
+  .list-cs{
     display: flex;
     flex-wrap: wrap;
-    a{
-      width: 130px;
-      height: 130px;
-      background-size: cover;
-      overflow: hidden;
-      font-size: 18px;
-      font-weight: 600;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 100%;
+    li{
+      width: 48%;
+      height: 48%;
     }
     .cs-con{
       background-image: url(../../images/cs_consumer.png);

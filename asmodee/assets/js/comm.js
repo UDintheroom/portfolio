@@ -6,17 +6,18 @@ var swiper = new Swiper(".main-slide", {
     delay: 2500,
     disableOnInteraction: false,
   },
+});
+
+var swiper = new Swiper(".new-slide", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".news-slide", {
   slidesPerView: "auto",
   spaceBetween: 30,
   pagination: {

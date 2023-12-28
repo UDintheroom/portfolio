@@ -107,7 +107,6 @@
         }
       }
     }
-
     // 선택 안 됐을 때 디자인
     .label-burger{
       position: relative;
@@ -118,7 +117,7 @@
       align-items: center;
       gap: 4px;
       width: 30px;
-      height: 70px;
+      height: 75px;
       cursor: pointer;
       .bar{
         display: block;
@@ -154,5 +153,37 @@
 // header
 
 // footer
+#footer{
+  display: flex;
+  flex-direction: column;
+  background: $primary;
+  .ft-logo{
+    background-image: url(../../images/logo.png);
+  }
+  .address, .call, .copyright{
+    color: $w;
+    font-size: 12px;
+  }
+  .sns{
+    .list-sns{
+      .facebook{
+        background-image: url(../../images/icon_facebook.png);
+      }
+      .insta{
+        background-image: url(../../images/icon_instagram.png);
+      }
+      .kakao{
+        background-image: url(../../images/icon_kakaotalk.png);
+      }
+      .blog{
+        background-image: url(../../images/icon_blog.png);
+      }
+      .shop{
+        background-image: url(../../images/icon_shop.png);
+      }
+    }
+  }
+}
+
 
 @import 'main','sub1';

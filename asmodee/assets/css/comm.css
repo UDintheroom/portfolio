@@ -274,7 +274,7 @@ legend {
 }
 
 #header {
-  height: 70px;
+  height: 79px;
 }
 
 #main {
@@ -282,7 +282,7 @@ legend {
 }
 
 #footer {
-  height: 70px;
+  height: 498px;
 }
 
 .title {
@@ -358,7 +358,7 @@ legend {
   align-items: center;
   gap: 4px;
   width: 30px;
-  height: 70px;
+  height: 75px;
   cursor: pointer;
 }
 #header .gnb-wrap .label-burger .bar {
@@ -378,6 +378,34 @@ legend {
   padding: 12px 24px;
   border-radius: 24px;
   margin: 20px 0 100px 0;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background: #00C1C1;
+}
+#footer .ft-logo {
+  background-image: url(../../images/logo.png);
+}
+#footer .address, #footer .call, #footer .copyright {
+  color: #fff;
+  font-size: 12px;
+}
+#footer .sns .list-sns .facebook {
+  background-image: url(../../images/icon_facebook.png);
+}
+#footer .sns .list-sns .insta {
+  background-image: url(../../images/icon_instagram.png);
+}
+#footer .sns .list-sns .kakao {
+  background-image: url(../../images/icon_kakaotalk.png);
+}
+#footer .sns .list-sns .blog {
+  background-image: url(../../images/icon_blog.png);
+}
+#footer .sns .list-sns .shop {
+  background-image: url(../../images/icon_shop.png);
 }
 
 .first-slide {
@@ -414,47 +442,41 @@ legend {
   color: #00C1C1;
 }
 
-.swiper {
+.main-txt {
+  font-size: 20px;
+  display: flex;
+}
+.main-txt.txt2 {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #00C1C1;
+}
+
+.new-slide {
   width: 100%;
   height: 100%;
 }
-
-.second-slide {
+.new-slide .second-slide {
+  display: flex;
   width: 80%;
 }
-
-.swiper-pagination {
+.new-slide .swiper-pagination {
   position: relative;
   margin-top: 20px;
 }
-
-.swiper-pagination-bullet {
+.new-slide .swiper-pagination-bullet {
   width: 7px;
   height: 7px;
   background: transparent;
   border: 1px solid #ccc;
   opacity: 1;
 }
-
-.swiper-pagination-bullet-active {
+.new-slide .swiper-pagination-bullet-active {
   width: 40px;
   transition: width 0.5s;
   border-radius: 5px;
   background: #00C1C1;
   border: 1px solid transparent;
-}
-
-.main-txt {
-  font-size: 20px;
-  display: flex;
-}
-.main-txttxt1 {
-  font-weight: 400;
-}
-.main-txt.txt2 {
-  margin-top: 10px;
-  font-weight: 600;
-  color: #00C1C1;
 }
 
 .card {
@@ -510,7 +532,6 @@ legend {
   font-size: 19px;
 }
 .card .card-inner .card-main .card-txt {
-  font-weight: 400;
   font-size: 16px;
   color: #444;
 }
@@ -541,7 +562,7 @@ legend {
   text-align: center;
 }
 .our-games .game-logo {
-  margin: 206px 0 7px 0;
+  margin: 206px 48px 7px 48px;
   background-position: center 0;
   text-indent: -9999px;
   width: 100%;
@@ -558,7 +579,6 @@ legend {
   letter-spacing: -0.7px;
   margin-top: 3px;
   font-size: 16px;
-  font-weight: 400;
   color: #fff;
   line-height: normal;
 }
@@ -631,7 +651,7 @@ legend {
 .news-slide .third-slide {
   position: relative;
   display: inline-block;
-  width: 75%;
+  width: 80%;
 }
 .news-slide .third-slide p {
   position: absolute;
@@ -660,30 +680,33 @@ hr {
   margin: 70px 0;
 }
 
-.cs-center {
-  display: flex;
+.cs-center .title {
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
-.cs-center .cs-center-inner {
+.cs-center .list-cs {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 100%;
 }
-.cs-center .cs-center-inner a {
-  width: 130px;
-  height: 130px;
-  background-size: cover;
-  overflow: hidden;
-  font-size: 18px;
-  font-weight: 600;
+.cs-center .list-cs li {
+  width: 48%;
+  height: 48%;
 }
-.cs-center .cs-center-inner .cs-con {
+.cs-center .list-cs .cs-con {
   background-image: url(../../images/cs_consumer.png);
 }
-.cs-center .cs-center-inner .cs-dis {
+.cs-center .list-cs .cs-dis {
   background-image: url(../../images/cs_distributor.png);
 }
-.cs-center .cs-center-inner .cs-mar {
+.cs-center .list-cs .cs-mar {
   background-image: url(../../images/cs_marketing.png);
 }
-.cs-center .cs-center-inner .cs-bra {
+.cs-center .list-cs .cs-bra {
   background-image: url(../../images/cs_brand.png);
 }/*# sourceMappingURL=comm.css.map */
