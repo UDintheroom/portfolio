@@ -68,7 +68,7 @@
   }
   .swiper-pagination{
     position: relative;
-    margin-top: 5vw;
+    margin-top: 20px;
   }
   .swiper-pagination-bullet{
     width: 7px;
@@ -90,14 +90,42 @@
 // card style
   // main : new games
   .card{
-    width: 80vw;
-    height: 89.5vw;
+    width: 356px;
+    height: 383px;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
+    // outline: 1px solid $secondary;
     border: 1px solid $secondary;
     .card-image{
       border-radius: 9px 9px 0 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      flex-grow: 1;
+      &.card-can{
+        background-image: url(../../images/b_canopy.jpg);
+        background-position: 0 -69px;
+      }
+      &.card-oce{
+        background-image: url(../../images/b_oceans.jpg);
+        background-position: 0 -13px;
+      }
+      &.card-tts{
+        background-image: url(../../images/b_t2rs.jpg);
+        background-position: 0 -6px;
+      }
+      &.card-ttg{
+        background-image: url(../../images/b_t2rg.jpg);
+        background-position: 0 -4px;
+      }
+      &.card-fla{
+        background-image: url(../../images/b_flamecraft.jpg);
+        background-position: 0 -2px;
+      }
+      &.card-end{
+        background-image: url(../../images/b_endless.jpg);
+        background-position: 0 -51px;
+      }
     }
     &:hover{
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -106,93 +134,103 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 5.2vw;
-      height: 100%;
+      padding: 23px;
+      height: 188px;
       .card-main{
         .card-hd{
           font-weight: 700;
-          font-size: 4.5vw;
+          font-size: 19px;
         }
         .card-txt{
-          font-size: 4vw;
+          font-size: 16px;
           color: $txtsecon;
         }
       }
       .card-ft{
         display: flex;
         .hash{
-          font-size: 2.6vw;
+          font-size: 10px;
           font-weight: 600;
           padding: 6px 11px;
           background: $secondary;
           border-radius: 12px;
-          margin-right: 0.8vw;
+          &.tag2{
+            margin-left: 4px;
+          }
         }
       }
     }
   }
     // main our games
-    // 사이즈 수정 필요
-    // 마진 값 수정 필요
+    // 사이즈 수정 필요 - 왜 더 작게 보이지?
+    // 마진 값 수정 필요 - 어떻게 해야되지 각기 다른 마진
     // 배경에 블랙 깔기
-    // 로고 사이즈 수정
   .our-games{
+    // position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: 100%;
+    width: 358px;
+    height: 494px;
     border-radius: 9px;
-    margin-bottom: 15px;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+    text-align: center;
     .game-logo{
       // position: absolute;
-      // margin: 206px 48px 7px 48px;
+      margin: 206px 48px 7px 48px;
+      background-position: center 0;
       text-indent: -9999px;
       width: 100%;
-      height: 100%;
+      height: 152px;
       background-size: contain;
       background-repeat: no-repeat;
     }
     span{
-      font-size: 4.4vw;
+      font-size: 19px;
       font-weight: 800;
       color: $w;
     }
     p{
       letter-spacing: -0.7px;
-      margin-top: 0.8vw;
-      font-size: 3.8vw;
+      margin-top: 3px;
+      font-size: 16px;
       color: $w;
+      // text-align: center;
       line-height: normal;
     }
     &.ttri{
-      background-image: url(../../images/mobile/game_ttr.jpg);
+      background-image: url(../../images/main_2t2r.png);
+      background-position: -747px 0;
     }
     .ttri-logo{
       background-image: url(../../images/logo_t2r.png);
     }
     &.seve{
-      background-image: url(../../images/mobile/game_7won.jpg);
+      background-image: url(../../images/game_7wonders.jpg);
+      background-position: -431px 0;
     }
     .seve-logo{
       background-image: url(../../images/logo_7wonders.png);
     }
     &.sple{
-      background-image: url(../../images/mobile/game_splen.jpg);
+      background-image: url(../../images/main_3splendor.png);
+      background-position: -431px 0;
     }
     .sple-logo{
       background-image: url(../../images/logo_splendor.png);
     }
     &.dixi{
-      background-image: url(../../images/mobile/game_dixit.jpg);
+      background-image: url(../../images/main_1dixit.png);
+      background-position: -431px 0;
     }
     .dixi-logo{
       background-image: url(../../images/logo_dixit.png);
     }
     &.dobb{
-      background-image: url(../../images/mobile/game_dob.jpg);
+      background-image: url(../../images/main_4dobble.png);
+      background-position: -431px 0;
     }
     .dobb-logo{
       background-image: url(../../images/logo_dobble.png);
@@ -211,7 +249,7 @@
       height: 180px;
       border-radius: 12px;
       color: $w;
-      font-size: 7.5vw;
+      font-size: 24px;
       font-weight: 800;
       letter-spacing: 3px;
       background-size: cover;
@@ -235,8 +273,8 @@
 // 검은 배경 깔기
 .news-slide {
   .third-slide {
-    // position: relative;
-    display: flex;
+    position: relative;
+    display: inline-block;
     width: 80%;
     p{
       position: absolute;
