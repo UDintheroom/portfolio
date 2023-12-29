@@ -207,8 +207,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 358px;
-      height: 180px;
+      // width: 358px;
+      // height: 180px;
+      width: 100%;
       border-radius: 12px;
       color: $w;
       font-size: 7.5vw;
@@ -218,15 +219,13 @@
       margin-top: 15px;
     }
     .rule{
-      background-image: url(../../images/files_rule.jpg);
+      background-image: url(../../images/mobile/files_rule.jpg);
     }
     .tool{
-      background-image: url(../../images/files_files.jpg);
-      background-position: 0 -10px;
+      background-image: url(../../images/mobile/files_files.jpg);
     }
     .etc{
-      background-image: url(../../images/files_etc.jpg);
-      background-position: 0 -160px;
+      background-image: url(../../images/mobile/files_etc.jpg);
     }
   }
 }

@@ -8,7 +8,7 @@ var swiper = new Swiper(".main-slide", {
   },
 });
 
-var swiper = new Swiper(".new-slide", {
+new Swiper(".new-slide", {
   slidesPerView: "auto",
   spaceBetween: 30,
   pagination: {
