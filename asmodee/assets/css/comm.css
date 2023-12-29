@@ -286,7 +286,7 @@ legend {
 }
 
 .title {
-  margin: 23vw 0 6vw 0;
+  margin: 35vw 0 6vw 0;
   font-size: 13vw;
   font-weight: 900;
   font-style: italic;
@@ -374,6 +374,7 @@ legend {
 }
 
 .btn-more {
+  display: inline-block;
   background: #000;
   color: #fff;
   font-size: 3.6vw;
@@ -386,6 +387,7 @@ legend {
 #footer {
   display: flex;
   flex-direction: column;
+  margin: 0 -20px;
   background: #00C1C1;
 }
 #footer .ft-logo {
@@ -394,6 +396,9 @@ legend {
 #footer .address, #footer .call, #footer .copyright {
   color: #fff;
   font-size: 12px;
+}
+#footer .sns .list-sns {
+  display: flex;
 }
 #footer .sns .list-sns .facebook {
   background-image: url(../../images/icon_facebook.png);
@@ -444,6 +449,7 @@ legend {
   font-weight: 900;
   font-style: italic;
   line-height: normal;
+  letter-spacing: -3px;
 }
 .first-slide .slogan .s-t1 {
   color: #fff;
@@ -456,6 +462,7 @@ legend {
 .main-txt {
   font-size: 5vw;
   display: flex;
+  word-break: keep-all;
 }
 .main-txt.txt1 {
   margin-top: 10vw;
@@ -471,26 +478,33 @@ legend {
     display: none;
   }
 }
-.new-slide {
-  width: 100%;
+.slide-wrap {
+  overflow: hidden;
+  margin: 0 -20px;
+  padding-left: 20px;
+}
+.slide-wrap .new-slide {
+  width: 88%;
   height: 100%;
+  margin: 0;
+  overflow: visible;
 }
-.new-slide .second-slide {
+.slide-wrap .new-slide .second-slide {
   display: flex;
-  width: 80%;
+  width: 100%;
 }
-.new-slide .swiper-pagination {
+.slide-wrap .new-slide .swiper-pagination {
   position: relative;
   margin-top: 5vw;
 }
-.new-slide .swiper-pagination-bullet {
+.slide-wrap .new-slide .swiper-pagination-bullet {
   width: 7px;
   height: 7px;
   background: transparent;
   border: 1px solid #ccc;
   opacity: 1;
 }
-.new-slide .swiper-pagination-bullet-active {
+.slide-wrap .new-slide .swiper-pagination-bullet-active {
   width: 40px;
   transition: width 0.5s;
   border-radius: 5px;
@@ -499,7 +513,6 @@ legend {
 }
 
 .card {
-  width: 80vw;
   height: 89.5vw;
   border-radius: 9px;
   display: flex;
@@ -507,6 +520,7 @@ legend {
   border: 1px solid #ccc;
 }
 .card .card-image {
+  width: 100%;
   border-radius: 9px 9px 0 0;
 }
 .card:hover {
@@ -603,35 +617,51 @@ legend {
 .sec-g .download {
   display: flex;
   flex-direction: column;
-}
-.sec-g .download a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  border-radius: 12px;
+}
+.sec-g .download a .files-img {
+  width: 100%;
+  background-image: url(../../images/mobile/files_rule.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.sec-g .download a .files-img p {
+  text-align: center;
   color: #fff;
   font-size: 7.5vw;
   font-weight: 800;
   letter-spacing: 3px;
-  background-size: cover;
-  margin-top: 15px;
 }
-.sec-g .download .rule {
-  background-image: url(../../images/mobile/files_rule.jpg);
+.sec-g .download a.rule {
+  margin-top: 0;
 }
-.sec-g .download .tool {
+.sec-g .download a.tool {
   background-image: url(../../images/mobile/files_files.jpg);
 }
-.sec-g .download .etc {
+.sec-g .download a.etc {
   background-image: url(../../images/mobile/files_etc.jpg);
 }
 
+.news-slide {
+  width: 88%;
+  height: 100%;
+  margin: 0;
+  overflow: visible;
+}
 .news-slide .third-slide {
   display: flex;
-  width: 80%;
+  width: 100%;
+  margin: 0;
 }
-.news-slide .third-slide p {
+.news-slide .third-slide a {
+  display: flex;
+  position: relative;
+}
+.news-slide .third-slide a img {
+  width: 100%;
+  border-radius: 9px;
+}
+.news-slide .third-slide a p {
   position: absolute;
   left: 25px;
   bottom: 20px;
@@ -642,15 +672,6 @@ legend {
   border-radius: 12px;
   color: #fff;
   background: #00C1C1;
-}
-.news-slide .third-slide a {
-  display: flex;
-  position: relative;
-  width: 358px;
-  height: 347px;
-}
-.news-slide .third-slide a img {
-  border-radius: 9px;
 }
 
 hr {

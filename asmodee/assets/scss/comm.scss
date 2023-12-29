@@ -34,7 +34,7 @@
   height: $ftH;
 }
 .title{
-  margin: 23vw 0 6vw 0;
+  margin: 35vw 0 6vw 0;
   font-size: 13vw;
   font-weight: 900;
   font-style: italic;
@@ -140,13 +140,13 @@
 
 // btn style
 .btn-more{
+  display: inline-block;
   background: $b;
   color: $w;
   font-size: 3.6vw;
   font-weight: 800;
   padding: 12px 24px;
   border-radius: 24px;
-  // 왜 위에가 안 밀리지?
   margin-top: 50px;
 }
 
@@ -160,6 +160,7 @@
 #footer{
   display: flex;
   flex-direction: column;
+  margin: 0 -20px;
   background: $primary;
   .ft-logo{
     background-image: url(../../images/logo.png);
@@ -170,6 +171,7 @@
   }
   .sns{
     .list-sns{
+      display: flex;
       .facebook{
         background-image: url(../../images/icon_facebook.png);
       }

@@ -31,6 +31,7 @@
     font-weight: 900;
     font-style: italic;
     line-height: normal;
+    letter-spacing: -3px;
     .s-t1{
       color: $w;
       text-shadow: 4px 3px $primary;
@@ -43,6 +44,7 @@
 .main-txt{
   font-size: 5vw;
   display: flex;
+  word-break: keep-all;
   &.txt1{
     margin-top: 10vw;
   }
@@ -59,30 +61,37 @@
 }
 
 // new games slide
-.new-slide {
-  width: 100%;
-  height: 100%;
-  .second-slide {
-    display: flex;
-    width: 80%;
-  }
-  .swiper-pagination{
-    position: relative;
-    margin-top: 5vw;
-  }
-  .swiper-pagination-bullet{
-    width: 7px;
-    height: 7px;
-    background: transparent;
-    border: 1px solid $secondary;
-    opacity: 1;
-  }
-  .swiper-pagination-bullet-active{
-    width: 40px;
-    transition: width .5s;
-    border-radius: 5px;
-    background: $primary;
-    border: 1px solid transparent;
+.slide-wrap{
+  overflow: hidden;
+  margin: 0 -20px;
+  padding-left: 20px;
+  .new-slide {
+    width: 88%;
+    height: 100%;
+    margin: 0;
+    overflow: visible;
+    .second-slide {
+      display: flex;
+      width: 100%;
+    }
+    .swiper-pagination{
+      position: relative;
+      margin-top: 5vw;
+    }
+    .swiper-pagination-bullet{
+      width: 7px;
+      height: 7px;
+      background: transparent;
+      border: 1px solid $secondary;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+      width: 40px;
+      transition: width .5s;
+      border-radius: 5px;
+      background: $primary;
+      border: 1px solid transparent;
+    }
   }
 }
 
@@ -90,13 +99,13 @@
 // card style
   // main : new games
   .card{
-    width: 80vw;
     height: 89.5vw;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
     border: 1px solid $secondary;
     .card-image{
+      width: 100%;
       border-radius: 9px 9px 0 0;
     }
     &:hover{
@@ -203,59 +212,74 @@
   .download{
     display: flex;
     flex-direction: column;
+    width: 100%;
     a{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      // width: 358px;
-      // height: 180px;
-      width: 100%;
-      border-radius: 12px;
-      color: $w;
-      font-size: 7.5vw;
-      font-weight: 800;
-      letter-spacing: 3px;
-      background-size: cover;
-      margin-top: 15px;
+      // border-radius: 12px;
+      // color: $w;
+      // font-size: 7.5vw;
+      // font-weight: 800;
+      // letter-spacing: 3px;
+      // text-align: center;
+      // background-size: auto auto;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      // margin-top: 15px;
+      .files-img{
+        width: 100%;
+        background-image: url(../../images/mobile/files_rule.jpg);
+        background-size: cover;
+        background-position: center center;
+        p{
+          text-align: center;
+          color: $w;
+          font-size: 7.5vw;
+          font-weight: 800;
+          letter-spacing: 3px;
+        }
+      }
+    &.rule{
+      margin-top: 0;
+      // background-image: url(../../images/mobile/files_rule.jpg);
     }
-    .rule{
-      background-image: url(../../images/mobile/files_rule.jpg);
-    }
-    .tool{
+    &.tool{
       background-image: url(../../images/mobile/files_files.jpg);
     }
-    .etc{
+    &.etc{
       background-image: url(../../images/mobile/files_etc.jpg);
     }
+   }
   }
 }
 
 // recent news
 // 검은 배경 깔기
 .news-slide {
+  width: 88%;
+  height: 100%;
+  margin: 0;
+  overflow: visible;
   .third-slide {
-    // position: relative;
     display: flex;
-    width: 80%;
-    p{
-      position: absolute;
-      left: 25px;
-      bottom: 20px;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: -0.5px;
-      padding: 6px 11px;
-      border-radius: 12px;
-      color: $w;
-      background: $primary;
-    }
+    width: 100%;
+    margin: 0;
     a{
       display: flex;
       position: relative;
-      width: 358px;
-      height: 347px;
       img{
+        width: 100%;
         border-radius: 9px;
+      }
+      p{
+        position: absolute;
+        left: 25px;
+        bottom: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        padding: 6px 11px;
+        border-radius: 12px;
+        color: $w;
+        background: $primary;
       }
     }
   }
