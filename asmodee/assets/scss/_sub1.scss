@@ -1,0 +1,216 @@
+// main banner
+  .main-banner-wrap{
+    // 아니 오른쪽 마진값 왜 안 먹음??
+    margin: -$hdH 0 0 -20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 148.6vw;
+  .main-banner-img{
+    background-image: url(../../images/c_festa1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &.main-text-wrap{
+    position: absolute;
+    // 이건 또 왜 안 먹히는지..?
+    top: 0;
+    left: 0;
+    .main-txt{
+      font-size: 11vw; 
+      font-weight: 900;
+      font-style: italic;
+      line-height: normal;
+      letter-spacing: -3px;
+    }
+  }
+}
+
+.who{
+  .who-txt{
+    font-size: 14px;
+    color: $txtDefult;
+  }
+  .who-icons{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    .num, .plus{
+      color: $primary;
+      font-weight: 900;
+    }
+    .num{
+      font-size: 50px;
+    }
+    .plus{
+      font-size: 25px;
+    }
+    .sub-txt{
+      color: $txtDefult;
+      font-weight: 800;
+      font-size: 14px;
+    }
+  }
+}
+
+// beteween slide
+
+// we are around the world
+.world{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .world-txt{
+    font-size: 14px;
+    color: $txtDefult;
+  }
+  .worldmap-wrap{
+    .worldmap-img{
+      width: 100%;
+      height: 180px;
+      background-image: url(../../images/map_world.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// platforms
+.pf-wrap{
+  .pf-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 358px;
+    height: 377px;
+    background: $secondary;
+    border-radius: 11px;
+    text-align: center;
+    .pf-img{
+      width: 70%;
+      height: 143px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      &.pf-boardgame{
+      background-image: url(../../images/p_boardgames.png);
+      }
+      &.pf-digital{
+        background-image:url(../../images/p_digital.png);
+      }
+      &.pf-entertain{
+        background-image:url(../../images/p_enter.png);
+      }
+    }
+  }
+  .pf-line{
+    color: $w ;
+    width: 100%;
+    height: 1px;
+  }
+  .pf-txt-wrap{
+    .pf-tit{
+      font-size: 24px;
+      font-weight: 900;
+      color: $txtDefult;
+    }
+    .pf-txt{
+      font-size: 16px;
+      font-weight: 600;
+      color: $txtsecon;
+    }
+  }
+}
+
+// studios slide
+.slide-wrap{
+  overflow: hidden;
+  margin: 0 -20px;
+  padding-left: 20px;
+  .studios-slide {
+    width: 88%;
+    height: 100%;
+    margin: 0;
+    overflow: visible;
+    .second-slide {
+      display: flex;
+      width: 100%;
+    }
+  }
+}
+// card style
+  .card{
+    height: 89.5vw;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $secondary;
+    .card-image{
+      width: 100%;
+      border-radius: 9px 9px 0 0;
+    }
+    &:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+    .card-inner{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 5.2vw;
+      height: 100%;
+      .card-tit{
+        font-weight: 700;
+        font-size: 4.5vw;
+      }
+      .card-ft{
+        display: flex;
+        .hash{
+          font-size: 2.6vw;
+          font-weight: 600;
+          padding: 6px 11px;
+          background: $secondary;
+          border-radius: 12px;
+          margin-right: 0.8vw;
+        }
+      }
+    }
+  }
+
+// location
+  .location{
+    .loca-tit{
+      font-weight: 800;
+      font-size: 24px;
+      color: $txtDefult;
+      }
+      .line{
+        margin: 20px 0;
+      }
+    .subway-side-wrap{
+      .subway-name{
+        .subway-num{
+          font-size: 24px;
+          font-weight: 600;
+          color: $w;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          background: #00A4E3;
+          border-radius: 100%;
+          text-align: center;
+        }
+        .subway-line{
+          font-size: 14px;
+          font-weight: 600;
+          color: $txtDefult;
+        }
+      }
+      .loca-txt-more{
+        font-size: 14px;
+        color: $txtDefult;
+      }
+    }
+  }
+  

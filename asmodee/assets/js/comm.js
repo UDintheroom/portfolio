@@ -8,7 +8,7 @@ var swiper = new Swiper(".main-slide", {
   },
 });
 
-new Swiper(".new-slide", {
+var swiper = new Swiper(".upcoming-slide", {
   slidesPerView: "auto",
   spaceBetween: 30,
   pagination: {
@@ -24,4 +24,14 @@ var swiper = new Swiper(".news-slide", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+// 왜,, 안 되는데^-^...?
+// scroll에 따른 header의 색상 변화
+$(window).on('scroll', function() {
+  if($(window).scrollTop()){
+    $('#header').addClass('active');
+  }else{
+    $('#header').removeClass('active');
+  }
 });
